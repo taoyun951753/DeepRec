@@ -199,6 +199,7 @@ class GPUHashMapKV : public KVInterface<K, V> {
   }
 
   int64 Size() const override {
+    return hash_table_->Size();
     return 0;
   }
 

@@ -567,7 +567,12 @@ class EmbeddingVar : public ResourceBase {
         key_list, value_list, version_list,
         freq_list, emb_config_, filter_, it);
   }
-
+  
+  void GetSnapshot(K* keys, V* values, const Eigen::GpuDevice& device) {
+    return storage_manager_->GetSnapshot(
+        keys, values, device);
+  } 
+ 
   int64 GetSnapshotWithoutFetchPersistentEmb(
       std::vector<K>* key_list,
       std::vector<V*>* value_list,
