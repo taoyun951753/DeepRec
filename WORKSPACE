@@ -7,7 +7,7 @@ http_archive(
     sha256="e2674bb36d5c39e3dfd28c18fb6f0568083c98209f0c5a0ee8eaf35ab4766f1d",
     strip_prefix="rules_docker-251f6a68b439744094faff800cd029798edf9faa",
     urls=[
-      "https://github.com/bazelbuild/rules_docker/archive/251f6a68b439744094faff800cd029798edf9faa.tar.gz"
+      "file:///var/DeepRec/tools/251f6a68b439744094faff800cd029798edf9faa.tar.gz"
     ],
 )
 
@@ -74,8 +74,8 @@ http_archive(
 http_archive(
     name = "bazel_skylib",
     sha256 = "2ef429f5d7ce7111263289644d233707dba35e39696377ebab8b0bc701f7818e",
-    urls = ["https://github.com/bazelbuild/bazel-skylib/releases/download/0.8.0/bazel-skylib.0.8.0.tar.gz"],
-)  # https://github.com/bazelbuild/bazel-skylib/releases
+    urls = ["file:///var/DeepRec/tools/bazel-skylib.0.8.0.tar.gz"],
+) 
 http_archive(
     name = "com_github_apple_swift_swift_protobuf",
     type = "zip",
@@ -214,7 +214,7 @@ http_archive(
     patches = [
         "//third_party:libaio.patch",
     ],
-    urls = ["https://pagure.io/libaio/archive/libaio-0.3.112/libaio-libaio-0.3.112.tar.gz"],
+    urls = ["file:///var/DeepRec/tools/libaio-libaio-0.3.112.tar.gz"],
 )
 
 http_archive(

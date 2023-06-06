@@ -164,6 +164,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         urls = [
             "https://github.com/oneapi-src/oneDNN/archive/v2.7.1.tar.gz",
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/oneapi-src/oneDNN/archive/v2.7.1.tar.gz",
+	    "file:///var/DeepRec/tools/v2.7.1.tar.gz",
         ],
     )
 
