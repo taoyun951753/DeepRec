@@ -1099,7 +1099,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         strip_prefix = "brotli-1.0.7",
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/google/brotli/archive/v1.0.7.tar.gz",
-            "https://github.com/google/brotli/archive/v1.0.7.tar.gz",
+	    "file:///var/DeepRec/tools/v1.0.7.tar.gz",
         ],
     )
 
@@ -1131,7 +1131,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         sha256 = "45337317c7f238fe0d64bb5d5418d264a427efc53400ddf8e6a964b6bcb31ce9",
         strip_prefix = "xsimd-7.5.0",
         urls = [
-            "https://github.com/xtensor-stack/xsimd/archive/refs/tags/7.5.0.tar.gz",
+	    "file:///var/DeepRec/tools/7.5.0.tar.gz",
         ],
     )
 
@@ -1142,7 +1142,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         strip_prefix = "zstd-1.4.4",
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/facebook/zstd/archive/v1.4.4.tar.gz",
-            "https://github.com/facebook/zstd/archive/v1.4.4.tar.gz",
+	    "file:///var/DeepRec/tools/v1.4.4.tar.gz",
         ],
     )
 
